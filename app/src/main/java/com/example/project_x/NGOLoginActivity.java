@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -60,6 +61,8 @@ public class NGOLoginActivity extends AppCompatActivity {
                             {
                                 loadingBar.dismiss();
                                 Toast.makeText(NGOLoginActivity.this, "Logged in succesfull", Toast.LENGTH_SHORT).show();
+                                startActivity(new Intent(NGOLoginActivity.this,HomeMapActivity.class));
+                                finish();
                             }
                             else
                             {
