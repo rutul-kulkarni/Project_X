@@ -24,7 +24,7 @@
         android:textStyle="bold"
 
 
-        ></EditText>'
+        ></EditText>
 
     <EditText
         android:id="@+id/login_ngo_password_input"
