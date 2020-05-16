@@ -9,28 +9,27 @@
     tools:context=".UserLoginActivity">
 
     <EditText
-        android:id="@+id/login_user_phone_number_input"
+        android:id="@+id/login_user_email_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/input_design"
         android:padding="20dp"
         android:layout_marginLeft="15dp"
         android:layout_marginRight="15dp"
-        android:hint="Mobile Number"
-        android:inputType="phone"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
         android:textColor="@android:color/darker_gray"
         android:textColorHint="@android:color/darker_gray"
         android:textSize="17sp"
         android:textStyle="bold"
 
-
-        ></EditText>'
+        ></EditText>
 
     <EditText
         android:id="@+id/login_user_password_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/login_user_phone_number_input"
+        android:layout_below="@+id/login_user_email_input"
         android:background="@drawable/input_design"
         android:padding="20dp"
         android:layout_marginLeft="15dp"
@@ -69,7 +68,7 @@
     </LinearLayout>
 
     <Button
-        android:id="@+id/login_btn"
+        android:id="@+id/login_user_btn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 

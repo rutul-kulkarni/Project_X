@@ -221,6 +221,16 @@ public class HomeMapActivity extends AppCompatActivity implements NavigationView
 
     }
 
+    private void logoutUser()
+    {
+        fAuth.signOut();
+        Intent intent = new Intent(HomeMapActivity.this,MainActivity.class);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+        startActivity(intent);
+        finish();
+
+    }
+
 
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {

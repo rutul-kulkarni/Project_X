@@ -27,10 +27,30 @@
         ></EditText>
 
     <EditText
-        android:id="@+id/register_user_phone_number_input"
+        android:id="@+id/register_user_email_input"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/register_user_name_input"
+        android:background="@drawable/input_design"
+        android:padding="20dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:hint="Email ID"
+        android:inputType="textEmailAddress"
+        android:textColor="@android:color/darker_gray"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+
+
+        ></EditText>
+
+    <EditText
+        android:id="@+id/register_user_phone_number_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/register_user_email_input"
         android:background="@drawable/input_design"
         android:padding="20dp"
         android:layout_marginLeft="15dp"
